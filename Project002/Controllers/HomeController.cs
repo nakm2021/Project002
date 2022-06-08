@@ -36,7 +36,7 @@ namespace Project002.Controllers
         /// ログイン(初期)ページよりLogin押下後のアクションメソッド
         /// </summary>
         /// <returns>どんな値でもLoginを許可する</returns>
-        public IActionResult Login()
+        public IActionResult Menu()
         {
             return View();
         }
