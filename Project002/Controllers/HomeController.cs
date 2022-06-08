@@ -18,6 +18,10 @@ namespace Project002.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// ログイン(初期)ページ
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             return View();
@@ -28,6 +32,14 @@ namespace Project002.Controllers
             return View();
         }
 
+        /// <summary>
+        /// ログイン(初期)ページよりLogin押下後のアクションメソッド
+        /// </summary>
+        /// <returns>どんな値でもLoginを許可する</returns>
+        public IActionResult Login()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

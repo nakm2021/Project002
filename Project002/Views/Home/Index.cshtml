@@ -3,6 +3,18 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h3>社内管理システム</h3>
+    <table class="mx-auto">
+        <tr>
+            <td colspan="2">User Id</td>
+            <td colspan="1"><input type="text" maxlength="8" value="" /></td>  
+        </tr>
+        <tr>
+            <td colspan="2">Passwod</td>
+            <td colspan="1"><input type="text" maxlength="8" value="" /></td>
+        </tr>
+        <tr>
+            <td colspan="3"><a value="GO" class="btn btn-primary" asp-controller="Home" asp-action="Login">Login</a></td>
+        </tr>
+    </table>
 </div>
