@@ -1,10 +1,21 @@
-﻿@{
+﻿@model IEnumerable<Project002.Models.Menu>
+
+@{
     ViewData["Title"] = "社内管理システムメニュー";
 }
 
-テスト：
-@Html.TextBox(
-    "name",
-    "テキストボックス",
-    new { @readonly = "readonly", maxlength = 18}
-    )
+<h3 class="text-center bg-info">社内管理システムメニュー</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>MENU ID</th>
+            <th>MENU NAME</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.MenuId)</td>
+            <td>@Html.DisplayNameFor(model => model.MenuName)</td>
+        </tr>
+    </tbody>
+</table>

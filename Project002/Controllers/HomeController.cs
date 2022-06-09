@@ -11,6 +11,7 @@ namespace Project002.Controllers
 {
     public class HomeController : Controller
     {
+        private MenuContext conDb = new MenuContext();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -38,8 +39,10 @@ namespace Project002.Controllers
         /// <returns>どんな値でもLoginを許可する</returns>
         public IActionResult Menu()
         {
-            return View();
+
+            return View(conDb.Menus.ToList());
         }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

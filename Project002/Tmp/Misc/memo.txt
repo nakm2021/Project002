@@ -1,0 +1,3 @@
+×Install-Package EntityFramework -Version 4.2.0
+Install-Package EntityFramework -Version 4.8.0
+Install-Package System.Configuration.ConfigurationManager
